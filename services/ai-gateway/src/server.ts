@@ -1,15 +1,13 @@
-import express from 'express';
+import app from "./app";
+import { env } from "./config/env";
+import { logger } from "./config/logger";
 
-const app = express();
-const port = 3000;
+if (!env.OPENAI_API_KEY) {
+  logger.warn(
+    "OPENAI_API_KEY is not set — OpenAI features will be disabled or limited."
+  );
+}
 
-app.get("/v1/health", (_req, res) => {
-  res.json({
-    status: "ok",
-    service: "ai-gateway"
-  });
-});
-
-app.listen(port, () => {
-  console.log(`AI Gateway running at http://localhost:${port}`);
+app.listen(Number(env.PORT), () => {
+  logger.info(`AI Gateway running at http://localhost:${env.PORT}`);
 });
