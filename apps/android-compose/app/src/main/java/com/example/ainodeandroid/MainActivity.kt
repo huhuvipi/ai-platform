@@ -4,13 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.example.ainodeandroid.ui.theme.AINodeAndroidTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,29 +12,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AINodeAndroidTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                MainScreen(onLanguageRequired = { detectDeviceLanguage() })
             }
         }
     }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AINodeAndroidTheme {
-        Greeting("Android")
+    private fun detectDeviceLanguage(): String {
+        val code = java.util.Locale.getDefault().language
+        val display = java.util.Locale(code).getDisplayLanguage(java.util.Locale.ENGLISH)
+        return if (display.isNullOrBlank()) "Vietnamese" else display
     }
 }
