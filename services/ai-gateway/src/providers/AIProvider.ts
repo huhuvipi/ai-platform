@@ -1,3 +1,3 @@
 export interface AIProvider {
-  summarize(text: string): Promise<string>;
+  summarize(text: string, language?: string): Promise<string>;
 }

@@ -1,7 +1,8 @@
 import {z} from "zod";
 
 export const summarizeSchema = z.object({
-    provider: z.enum(["openai"]).default("openai"),
+  provider: z.enum(["openai", "gemini"]).default("openai"),
+  language: z.string().min(1, "Language is required").default("Vietnamese"),
   text: z.string().min(1, "Text is required"),
 });
 

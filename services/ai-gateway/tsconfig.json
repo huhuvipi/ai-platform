@@ -36,7 +36,6 @@
     "strict": true,
     "jsx": "react-jsx",
     "isolatedModules": false,
-    "moduleResolution": "node",
     "ignoreDeprecations": "6.0",
     "skipLibCheck": true,
   }

@@ -8,8 +8,8 @@ export async function summarizeController(req: Request, res: Response, next: Nex
     try {
         const body = summarizeSchema.parse(req.body);
 
-        const result = await summarizeService.execute(body.provider, body.text);
-        res.json({ summary: result });
+        const result = await summarizeService.execute(body.provider, body.text, body.language);
+        res.json({ provider: body.provider, language: body.language, result });
     } catch (error) {
         next(error);
     }

@@ -47,7 +47,7 @@ struct AppEnvironment {
 }
 
 enum AINoteEndpoint {
-    case summarize(provider: String, text: String)
+    case summarize(provider: String, text: String, language: String)
 }
 
 extension AINoteEndpoint: Endpoint {
@@ -107,8 +107,8 @@ extension AINoteEndpoint: Endpoint {
     
     var body: Any? {
         switch self {
-        case .summarize(let provider, let text):
-            return ["provider": provider, "text": text]
+        case .summarize(let provider, let text, let language):
+            return ["provider": provider, "text": text, "language": language]
         }
     }
 }

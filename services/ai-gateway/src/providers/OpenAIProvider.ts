@@ -11,16 +11,18 @@ export class OpenAIProvider implements AIProvider {
     }
   }
 
-  async summarize(text: string): Promise<string> {
+  async summarize(text: string, language = "Vietnamese"): Promise<string> {
     if (!this.client) {
       return Promise.resolve(
-        `MOCK SUMMARY: ${text.slice(0, 60)}${text.length > 60 ? '...' : ''}`
+        `MOCK SUMMARY (${language}): ${text.slice(0, 60)}${text.length > 60 ? '...' : ''}`
       );
     }
 
     const response = await this.client.responses.create({
       model: "gpt-4.1-mini",
-      input: `Summarize the following text:\n\n${text}`,
+      input: `Please write a detailed ${language} summary of the following text. Include all key points, keep the result longer than one sentence, and use complete sentences.
+
+${text}`,
     });
 
     return response.output_text;
