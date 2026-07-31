@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final request = SummarizeRequest(
       provider: 'gemini',
       text: _textController.text,
-      language: 'en',
+      language: 'English',
     );
 
     try {
