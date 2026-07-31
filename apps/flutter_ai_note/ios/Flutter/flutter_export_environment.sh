@@ -1,0 +1,15 @@
+#!/bin/sh
+# This is a generated file; do not edit or check into version control.
+export "FLUTTER_ROOT=/Users/vinhhuynh/Development/Flutter"
+export "FLUTTER_APPLICATION_PATH=/Users/vinhhuynh/Development/AI/ai-platform/apps/flutter_ai_note"
+export "FLUTTER_FRAMEWORK_SWIFT_PACKAGE_PATH=/Users/vinhhuynh/Development/AI/ai-platform/apps/flutter_ai_note/ios/Flutter/ephemeral/Packages/.packages/FlutterFramework"
+export "COCOAPODS_PARALLEL_CODE_SIGN=true"
+export "FLUTTER_TARGET=/Users/vinhhuynh/Development/AI/ai-platform/apps/flutter_ai_note/lib/main.dart"
+export "FLUTTER_BUILD_DIR=build"
+export "FLUTTER_BUILD_NAME=1.0.0"
+export "FLUTTER_BUILD_NUMBER=1"
+export "DART_DEFINES=RkxVVFRFUl9CVUlMRF9OQU1FPTEuMC4w,RkxVVFRFUl9CVUlMRF9OVU1CRVI9MQ==,RkxVVFRFUl9WRVJTSU9OPTMuNDcuMC0xLjAucHJlLTMwMA==,RkxVVFRFUl9DSEFOTkVMPW1hc3Rlcg==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049YTExMWNkMGZhOQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049Y2RlMTUzMjFhYQ==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xNC4wIChidWlsZCAzLjE0LjAtODAuMC5kZXYp"
+export "DART_OBFUSCATION=false"
+export "TRACK_WIDGET_CREATION=true"
+export "TREE_SHAKE_ICONS=false"
+export "PACKAGE_CONFIG=/Users/vinhhuynh/Development/AI/ai-platform/apps/flutter_ai_note/.dart_tool/package_config.json"

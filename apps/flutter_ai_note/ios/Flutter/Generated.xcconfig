@@ -1,0 +1,16 @@
+// This is a generated file; do not edit or check into version control.
+FLUTTER_ROOT=/Users/vinhhuynh/Development/Flutter
+FLUTTER_APPLICATION_PATH=/Users/vinhhuynh/Development/AI/ai-platform/apps/flutter_ai_note
+FLUTTER_FRAMEWORK_SWIFT_PACKAGE_PATH=/Users/vinhhuynh/Development/AI/ai-platform/apps/flutter_ai_note/ios/Flutter/ephemeral/Packages/.packages/FlutterFramework
+COCOAPODS_PARALLEL_CODE_SIGN=true
+FLUTTER_TARGET=/Users/vinhhuynh/Development/AI/ai-platform/apps/flutter_ai_note/lib/main.dart
+FLUTTER_BUILD_DIR=build
+FLUTTER_BUILD_NAME=1.0.0
+FLUTTER_BUILD_NUMBER=1
+EXCLUDED_ARCHS[sdk=iphonesimulator*]=i386
+EXCLUDED_ARCHS[sdk=iphoneos*]=armv7
+DART_DEFINES=RkxVVFRFUl9CVUlMRF9OQU1FPTEuMC4w,RkxVVFRFUl9CVUlMRF9OVU1CRVI9MQ==,RkxVVFRFUl9WRVJTSU9OPTMuNDcuMC0xLjAucHJlLTMwMA==,RkxVVFRFUl9DSEFOTkVMPW1hc3Rlcg==,RkxVVFRFUl9HSVRfVVJMPWh0dHBzOi8vZ2l0aHViLmNvbS9mbHV0dGVyL2ZsdXR0ZXIuZ2l0,RkxVVFRFUl9GUkFNRVdPUktfUkVWSVNJT049YTExMWNkMGZhOQ==,RkxVVFRFUl9FTkdJTkVfUkVWSVNJT049Y2RlMTUzMjFhYQ==,RkxVVFRFUl9EQVJUX1ZFUlNJT049My4xNC4wIChidWlsZCAzLjE0LjAtODAuMC5kZXYp
+DART_OBFUSCATION=false
+TRACK_WIDGET_CREATION=true
+TREE_SHAKE_ICONS=false
+PACKAGE_CONFIG=/Users/vinhhuynh/Development/AI/ai-platform/apps/flutter_ai_note/.dart_tool/package_config.json
