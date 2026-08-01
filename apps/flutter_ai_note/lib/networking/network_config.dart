@@ -12,7 +12,6 @@ class NetworkConfig {
     environment = env;
   }
 
-  static bool get isDev => environment == NetworkEnvironment.dev;
   static bool get isProd => environment == NetworkEnvironment.prod;
 
   static String get baseUrl {
