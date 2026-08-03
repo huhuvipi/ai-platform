@@ -2,9 +2,12 @@ import express from "express";
 import healthRoute from "./routes/health.route";
 import { errorMiddleware } from "./middleware/error.middleware";
 import summarizeRoute from "./routes/summarize.route";
+import cors from 'cors';
 
 const app = express();
-
+app.use(cors({
+  origin: 'http://localhost:3001',
+}));
 app.use(express.json());
 // Mount API routes under /v1 for versioning
 app.use("/v1", healthRoute);

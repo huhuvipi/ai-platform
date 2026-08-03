@@ -22,5 +22,6 @@ export class NetworkConfig {
         return {
             'Content-Type': 'application/json',
         };
+
     }
 }
